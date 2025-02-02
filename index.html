@@ -7,70 +7,97 @@
     <title>Document</title>
     
     <style>
+        
+        /*header section*/
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f0f4f8;
         }
-
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            background-color: #f8f9fa;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
-        header nav a {
-            margin: 0 1rem;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2a6df4;
+        }
+        .logo span {
+            color: black;
+        }
+        nav a {
+            margin: 0 15px;
             text-decoration: none;
             color: #333;
+            font-size: 16px;
         }
-
-        .hero {
-            text-align: left;
-            padding: 3rem 1rem;
-            background-color: #e9ecef;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-        
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            margin-bottom: 1.5rem;
-            color: #555;
-        }
-
-        .search-bar {
-            align-items: left;
-            display: flex;
-            justify-content: left;
-            margin: 2rem 0;
-        }
-
-        .search-bar input {
-            padding: 0.5rem;
-            margin-right: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        .search-bar button {
-            padding: 0.5rem 1rem;
+        .auth-buttons button {
+            padding: 10px 20px;
             border: none;
-            background-color: #007bff;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .login {
+            background-color: transparent;
+            color: #2a6df4;
+            border: 1px solid #2a6df4;
+        }
+        .signup {
+            background-color: #2a6df4;
             color: white;
-            border-radius: 4px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+            background-color: #e0efff;
+        }
+        .text-content {
+            max-width: 50%;
+        }
+        .text-content h1 span {
+            color: #2a6df4;
+        }
+        .search-bar {
+            margin-top: 20px;
+            display: flex;
+        }
+        .search-bar input {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-btn {
+            background-color: #2a6df4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
             cursor: pointer;
         }
+        .doctor-image img {
+            width: 250px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #2a6df4;
+            color: white;
+        }
+        .stat-box {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /*consultig section*/
 
         .consulting-specialists {
             padding: 2rem;
@@ -109,223 +136,6 @@
             background-color: white;
         }
 
-        footer {
-    background-color: #0366d6; /* Blue background */
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 250px;
-    margin: 10px;
-}
-
-.footer-section h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-section p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.footer-links a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.footer-social-icons {
-    margin-top: 10px;
-}
-
-.footer-social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 18px;
-    color: white;
-}
-
-.footer-map {
-    max-width: 200px;
-    border-radius: 10px;
-}
-
-.footer-bottom {
-    margin-top: 20px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 14px;
-}
-
-        .ray {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .sem {
-            display: flex;
-            justify-content: flex-start;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 0;
-        }
-        .statistics div {
-            margin: 0 20px;
-        }
-        .image{
-            grid-column: 2;
-            grid-row: span 2;
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        /* General Reset */
-
-
-/* Health Section */
-.health-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: 50px auto;
-    padding: 20px;
-}
-
-.health-content {
-    flex: 1;
-    max-width: 500px;
-}
-
-.health-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #007bff;
-}
-
-.health-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.learn-more {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.health-image img {
-    max-width: 450px;
-    border-radius: 10px;
-}
-
-/* Newsletter Section */
-.newsletter-section {
-    background-color: #0366d6;
-    text-align: center;
-    padding: 40px;
-    color: white;
-    border-radius: 10px;
-    max-width: 900px;
-    margin: 50px auto;
-}
-
-.newsletter-section h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.newsletter-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    border-radius: 50px;
-    padding: 5px;
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.newsletter-form input {
-    flex: 1;
-    border: none;
-    padding: 12px;
-    border-radius: 50px;
-    font-size: 1rem;
-    outline: none;
-}
-
-.newsletter-form button {
-    background: #007bff;
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-}
-
-.newsletter-form button i {
-    font-size: 1.2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .health-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .health-content, .health-image {
-        max-width: 100%;
-    }
-
-    .health-image img {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .newsletter-form input {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .newsletter-form button {
-        width: 100%;
-        border-radius: 50px;
-    }
-}
 
 
 /* Testimonial Section */
@@ -508,7 +318,201 @@
             color: #007bff;
         }
         
-    
+/* Health Section */
+.health-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.health-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.health-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+.health-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.health-image img {
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #0366d6;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.newsletter-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.newsletter-form button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.newsletter-form button i {
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .health-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .health-content, .health-image {
+        max-width: 100%;
+    }
+
+    .health-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+
+    /*footer section*/
+footer {
+    background-color: #0366d6; /* Blue background */
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-icons {
+    margin-top: 10px;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-map {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
 
 
 
@@ -520,40 +524,40 @@
 </head>
 
 <body>
-        <header>
-            <div class="logo">E-sheba</div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Application</a>
-                <a href="#">History</a>
-                <a href="#">Log in</a>
-                <a href="#">Sign up</a>
-            </nav>
-        </header>
-
- <div class="hero">
- <div class="txt">
-     <section>
-            <h1>Find & Search Your Doctor</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
-            <div class="search-bar">
-                <input type="text" placeholder="Location">
-                <input type="text" placeholder="Doctor's Name">
-                <button>Search</button>
+    <header>
+        <div class="logo">E-<span>sheba</span></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Application</a>
+            <a href="#">History</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Log in</button>
+            <button class="signup">Sign up</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="text-content">
+                <h1>Find & Search Your <span>Favourite</span> Doctor</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Doctor's Name">
+                    <input type="text" placeholder="Location">
+                    <button class="search-btn">🔍</button>
+                </div>
             </div>
-    </section>
- </div>
- <div class="image">
-    <img src="images/photo-1738363436637-ee6f4a910715.avif" alt="yu">
-   </div>
- <div class="txt">
-    <section>
-        <div>24/7 Online Support|100+ doctors|1M+ Active patients</div>
-    </section>
-</div>
- 
-</div>
+            <div class="doctor-image">
+                <img src="images/photo-1737652423075-d0e3510b7ee1.avif" alt="Doctor Image">
+            </div>
+        </section>
+        <section class="stats">
+            <div class="stat-box"><strong>24/7</strong><br>Online Support</div>
+            <div class="stat-box"><strong>100+</strong><br>Doctors</div>
+            <div class="stat-box"><strong>1M+</strong><br>Active Patients</div>
+        </section>
+    </main>
 
 
     
@@ -569,7 +573,7 @@
                 </div>
                 <div class="card active">
                     <h2>Heart Lungs</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
                 </div>
                 <div class="card">
                     <h2>Suppliment</h2>
@@ -581,12 +585,13 @@
                 </div>
             </div>
         
-     <div style="display: flex; gap: 5em;" class="why-choose">
+     <div style="display: flex; gap: 10em;" class="why-choose">
                 <div>
                     <img src="images/premium_photo-1685214899622-8e6a2f14cd7c.avif" alt="Consultant Image">
                 </div>
 
             <div>
+                <div>
                 <h1>Why You Choose Us?</h1>
                 
                 <ul>
@@ -594,7 +599,9 @@
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 </ul>
+                </div>
                 <div class="learn-more">
                     <a href="#" style="color: #007bff; text-decoration: underline;">Learn More ></a>
                 </div>
