@@ -1,1 +1,1 @@
-# ry-hub-it.github.io
+This is my final Season 7 Project that contains a simple layout of a fashion website
