@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RYDERALMA FASHION</title>
     
     <style>
         
@@ -83,7 +83,7 @@
             cursor: pointer;
         }
         .doctor-image img {
-            width: 250px;
+            width: 500px;
         }
         .stats {
             display: flex;
@@ -234,7 +234,7 @@
 
 .testimonial-text {
     margin-top: 15px;
-    font-size: 1rem;
+    font-size: 21px;
     line-height: 1.6;
 }
 
@@ -501,18 +501,29 @@ footer {
     font-size: 18px;
     color: white;
 }
-
-.footer-map {
-    max-width: 200px;
-    border-radius: 10px;
-}
+#map {
+            height: 200px;
+            width: 100%;
+        }
 
 .footer-bottom {
     margin-top: 20px;
+    margin-inline-start: 50px;
+    margin-inline-end: 50px;
     padding-top: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-    font-size: 14px;
+    font-size: 21px;
+    
 }
+.rat{
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* Adjust thickness */
+  text-underline-offset: 5px; /* Adjust spacing below text */
+  color: blue;
+  font-weight: bold;
+}
+
+
 
 
 
@@ -521,18 +532,21 @@ footer {
     </style>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
 </head>
 
 <body>
     <header>
-        <div class="logo">E-<span>sheba</span></div>
-        <nav>
+        <div class="logo" style="font-size: 42px;">RYDER<span>ALMA</span></div>
+        <nav style="font-size: 21px;">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Application</a>
             <a href="#">History</a>
         </nav>
-        <div class="auth-buttons">
+        <div class="auth-buttons" style="font-size: 21px;">
             <button class="login">Log in</button>
             <button class="signup">Sign up</button>
         </div>
@@ -540,22 +554,22 @@ footer {
     <main>
         <section class="hero">
             <div class="text-content">
-                <h1>Find & Search Your <span>Favourite</span> Doctor</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
-                <div class="search-bar">
-                    <input type="text" placeholder="Doctor's Name">
+                <h1 style="font-size: 85px;">Find & Search Your <span class="rat">Favourite</span> Designer</h1>
+                <p style="font-size: 21px;">Through our designers,a variety of outfits and can be easily accessed and guidance offered to our clients.</p>
+                <div class="search-bar" style="font-size: 21px;">
+                    <input type="text" placeholder="Designer's Name">
                     <input type="text" placeholder="Location">
                     <button class="search-btn">🔍</button>
                 </div>
             </div>
             <div class="doctor-image">
-                <img src="images/photo-1737652423075-d0e3510b7ee1.avif" alt="Doctor Image">
+                <img src="photos/premium_photo-1734354794200-49aec81e395d.avif" alt="Doctor Image">
             </div>
         </section>
         <section class="stats">
             <div class="stat-box"><strong>24/7</strong><br>Online Support</div>
-            <div class="stat-box"><strong>100+</strong><br>Doctors</div>
-            <div class="stat-box"><strong>1M+</strong><br>Active Patients</div>
+            <div class="stat-box"><strong>100+</strong><br>Sales and Marketers</div>
+            <div class="stat-box"><strong>1M+</strong><br>Active Clients</div>
         </section>
     </main>
 
@@ -565,41 +579,41 @@ footer {
 
     <section>
         <div class="container">
-            <h1>Our Consulting Specialists</h1>
+            <h1 style="font-size: x-large;">Our Consulting Specialists</h1>
             <div class="specialist-cards">
                 <div class="card">
-                    <h2>Covid-19 Test</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                    <h2 style="font-size: 32px;">Wedding outfits designs</h2>
+                    <p style="font-size: 21px;">These outfits comes in variety depending on one's taste as far as wedding functions are concerned .</p>
                 </div>
                 <div class="card active">
-                    <h2>Heart Lungs</h2>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                    <h2 style="font-size: 32px;">graduation outfits designs</h2>
+                    <p style="color: white; font-size: 21px;">The outfits here are majorly meant for graduation functions.</p>
                 </div>
                 <div class="card">
-                    <h2>Suppliment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                    <h2 style="font-size: 32px;">Birthdays and other realated parties wear</h2>
+                    <p style="font-size: 21px;">The outfits here suit birthdays and other related parties.</p>
                 </div>
                 <div class="card">
-                    <h2>Mental Health</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+                    <h2 style="font-size: 32px;">Travelling outfits</h2>
+                    <p style="font-size: 21px;">We offer a variety of outfits that makes travelling quite a comfort.</p>
                 </div>
             </div>
         
      <div style="display: flex; gap: 10em;" class="why-choose">
                 <div>
-                    <img src="images/premium_photo-1685214899622-8e6a2f14cd7c.avif" alt="Consultant Image">
+                    <img src="photos/photo-1732492211688-b1984227af93.avif" alt="Consultant Image">
                 </div>
 
             <div>
                 <div>
-                <h1>Why You Choose Us?</h1>
+                <h1 style="font-size: x-large;">Why You Choose Us?</h1>
                 
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                <ul style="font-size: 21px;">
+                    <li>our products are of the highest quality and durable.</li>
+                    <li>We operate on a 24/7 hour basis.</li>
+                    <li>Our products are available both online and physically.</li>
+                    <li>We offer door to door delivery services in all parts of the country.</li>
+                    <li>Our products are quite affordable.</li>
                 </ul>
                 </div>
                 <div class="learn-more">
@@ -615,8 +629,8 @@ footer {
 
     <section style="background-color: #E1EEFF;" class="testimonial-section">
         <div class="testimonial-content">
-            <h1>What <span class="highlight">Our Member’s</span> <br> Saying About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.</p>
+            <h1 style="font-size: x-large;">What <span class="highlight">Our Member’s</span> <br> Saying About Us</h1>
+            <p style="font-size: 21px;">With RYDERALMA fashion,all your fashion taste and preference are well met to the customers satisfaction.</p>
             <div class="review-info">
                 <div class="review-avatars">
                     <img src="images/3d-render-avatar-character_23-2150611707.avif" alt="User">
@@ -634,8 +648,8 @@ footer {
             <div class="testimonial-header">
                 <img src="images/3d-rendering-hair-style-avatar-design_23-2151869121.avif" alt="User">
                 <div>
-                    <h3>Jane Cooper</h3>
-                    <p>12/4/17</p>
+                    <h3 style="font-size: 21px;">Brittney Alumasa</h3>
+                    <p style="font-size: small;">12/4/17</p>
                 </div>
             </div>
             <div class="testimonial-rating">
@@ -646,8 +660,8 @@ footer {
                 <i class="fas fa-star"></i>
             </div>
             <p class="testimonial-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem velit viverra amet faucibus.
+                RYDERALMA Fashion has proven to be quite consistent and reliable in offering fashion and design products. 
+                Most of the products have a five star rating since they are quite outstanding.
             </p>
         </div>
     </section>
@@ -656,19 +670,19 @@ footer {
 
     <section class="health-section">
         <div class="health-content">
-            <h1>The Future <br> of <span class="highlight">Quality Health</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper. Auctor semper fermentum volutpat integer vel.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper.</p>
+            <h1>The Future <br> of <span class="highlight">Modern Fashion</span></h1>
+            <p style="font-size: 21px;">Fashion tends to influence and define our culture.</p>
+            <p style="font-size: 21px;">Fashion offers a good number of employment opportunities to many individuals hence playing a big role in their future lifestyle.</p>
+            <p style="font-size: 21px;">With the latest fashion,quite a number of people are able to embrace the modern way of dressing.</p>
             <a href="#" class="learn-more">Learn More →</a>
         </div>
         <div class="health-image">
-            <img src="images/photo-1738369350430-87d667611998.avif" alt="Doctor with Patient">
+            <img src="photos/photo-1617922001439-4a2e6562f328.avif" alt="Doctor with Patient">
         </div>
     </section>
 
     <section class="newsletter-section">
-        <h2>Subscribe To Our Newsletter</h2>
+        <h2 style="font-size: 53;">Subscribe To Our Newsletter</h2>
         <div class="newsletter-form">
             <input type="email" placeholder="Enter your email">
             <button><i class="fas fa-arrow-right"></i></button>
@@ -679,8 +693,8 @@ footer {
         <footer>
             <div class="footer-container">
                 <div class="footer-section">
-                    <h3>E-sheba</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec risus feugiat lectus risus sed ullamcorper.</p>
+                    <h3 style="font-size: 32px;">RYDERALMA</h3>
+                    <p style="font-size: 21px;">RYDERALMA Fashion company that began in May,2020 and has experinced immence growth since then due to its reliability,consistency and ability to satisfy all its customers needs.</p>
                     <div class="footer-social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -688,19 +702,32 @@ footer {
                     </div>
                 </div>
                 <div class="footer-section footer-links">
-                    <h3>Useful Links</h3>
-                    <a href="#">About Us</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Our Mission</a>
-                    <a href="#">Our Team</a>
+                    <h3 style="font-size: 32px;">Useful Links</h3>
+                    <a href="#" style="font-size: 21px;">About Us</a>
+                    <a href="#" style="font-size: 21px;">Privacy Policy</a>
+                    <a href="#" style="font-size: 21px;">Our Mission</a>
+                    <a href="#" style="font-size: 21px;">Our Team</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Address</h3>
-                    <img src="map.png" alt="Map" class="footer-map">
+                    <h3 style="font-size: 32px;">Address</h3>
+                    
+    <div id="map"></div>
+
+    <script>
+        var map = L.map('map').setView([40.7128, -74.0060], 10); // New York City
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([40.7128, -74.0060]).addTo(map)
+            .bindPopup("New York City")
+            .openPopup();
+    </script>
                 </div>
             </div>
             <div class="footer-bottom">
-                © 2022 All Rights Reserved
+                © 2025 All Rights Reserved
             </div>
         </footer>
         
