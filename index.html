@@ -522,6 +522,19 @@ footer {
   color: blue;
   font-weight: bold;
 }
+@media(max-width:768px){
+    body{ 
+        font-size: 14px;
+    }
+    .yoh{
+        flex-direction: column;
+    }
+}
+@media(max-width:480px){
+    .menu{
+        display: none;
+    }
+}
 
 
 
@@ -537,7 +550,7 @@ footer {
 
 </head>
 
-<body>
+<body class="yoh">
     <header>
         <div class="logo" style="font-size: 42px;">RYDER<span>ALMA</span></div>
         <nav style="font-size: 21px;">
